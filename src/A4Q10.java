@@ -122,8 +122,10 @@ public class A4Q10 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
-        // 
-        A + B ();
+        // get both text boxes and add them to give the user the result
+       int add = Integer.parseInt(A.getText()) + Integer.parseInt(B.getText());
+       
+       C.setText("" + add);
     }//GEN-LAST:event_addActionPerformed
 
     private void AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AActionPerformed
