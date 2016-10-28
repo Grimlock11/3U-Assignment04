@@ -130,7 +130,7 @@ public class A4Q10 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_AActionPerformed
 
-    /**
+    /** 
      * @param args the command line arguments
      */
     public static void main(String args[]) {
