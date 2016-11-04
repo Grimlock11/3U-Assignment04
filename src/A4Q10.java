@@ -44,6 +44,18 @@ public class A4Q10 extends javax.swing.JFrame {
             }
         });
 
+        B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BActionPerformed(evt);
+            }
+        });
+
+        C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CActionPerformed(evt);
+            }
+        });
+
         add.setText("Add");
         add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,10 +64,25 @@ public class A4Q10 extends javax.swing.JFrame {
         });
 
         sub.setText("Sub");
+        sub.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subActionPerformed(evt);
+            }
+        });
 
         mul.setText("Mul");
+        mul.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mulActionPerformed(evt);
+            }
+        });
 
         div.setText("Div");
+        div.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                divActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("First Number");
 
@@ -122,17 +149,46 @@ public class A4Q10 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
-        // get both text boxes and add them to give the user the result
-       int add = Integer.parseInt(A.getText()) + Integer.parseInt(B.getText());
-       
-       C.setText("" + add);
+        // get both text boxes A & B and add them to give the user the result
+        int add = Integer.parseInt(A.getText()) + Integer.parseInt(B.getText());
+        // tell the user what the answer is in textbox C
+        C.setText("" + add);
     }//GEN-LAST:event_addActionPerformed
 
     private void AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_AActionPerformed
 
-    /** 
+    private void subActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subActionPerformed
+        // get both text boxes A & B and subtract B from A to get the result
+        int sub = Integer.parseInt(A.getText()) - Integer.parseInt(B.getText());
+        // tell the user what the answer is in textbox C
+        C.setText("" + sub);
+    }//GEN-LAST:event_subActionPerformed
+
+    private void mulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mulActionPerformed
+        // get both text boxes A & B and multiply them together to give the user the result
+        int mul = Integer.parseInt(A.getText()) * Integer.parseInt(B.getText());
+        // tell the user what the answer is in textbox C
+        C.setText("" + mul);
+    }//GEN-LAST:event_mulActionPerformed
+
+    private void divActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divActionPerformed
+        // get both text box A & B and divide A using B to given the user the result    
+        double div = Double.parseDouble(A.getText()) / Double.parseDouble(B.getText());
+        // tell the user what the answer is in textbox C
+        C.setText("" + div);
+    }//GEN-LAST:event_divActionPerformed
+
+    private void BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BActionPerformed
+
+    private void CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CActionPerformed
+
+    /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {

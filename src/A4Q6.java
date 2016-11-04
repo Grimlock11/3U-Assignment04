@@ -16,24 +16,25 @@ public class A4Q6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        // create the input for the user
         Scanner input = new Scanner(System.in);
         // get the number of minutes the user uses in the daytime
         System.out.println("Number of daytime minutes? ");
-        // saves the number that was inputed
+        // // getting a variable for the users input
         double myint1;
-        // gets the number from the user
+        // gets the number from the user and stores it until needed
         myint1 = input.nextDouble();
         // get the number of minutes the user uses in the evening
         System.out.println("Number of evening minutes? ");
-        // saves the number that was inputed
+        // getting a variable for the users input
         double myint2;
-        // gets the number from the user
+        // gets the number from the user and stores it until needed
         myint2 = input.nextDouble();
         // get the number of minutes the user uses on the weekend
         System.out.println("Number of weekend minutes? ");
-        // saves the number that was inputed
+        // getting a variable for the users input
         double myint3;
-        // gets the number from the user
+        // gets the number from the user and stores it until needed
         myint3 = input.nextDouble();
         // calculate total cost for plan A
         double planA = myint1 * 0.25 - 100 + myint2 * 0.15 + myint3 * 0.20;

@@ -17,6 +17,7 @@ public class A4Q5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        // create the input for the user
         Scanner input = new Scanner(System.in);
         // get users name 
         System.out.println("Please enter your name: ");
@@ -26,9 +27,9 @@ public class A4Q5 {
         myint1 = input.next();
         // ask the user for what the test was out of (x5)
         System.out.println("What was the first test out of?: ");
-        // saves the users number (X5)
+        // // getting a variable for the users input (X5)
         double myint2;
-        // get the number from the user (x5)
+        // get the number from the user and stores it until needed (x5)
         myint2 = input.nextDouble();
         // ask for the mark the user got on the test (x5)
         System.out.println("What mark did you get?: ");

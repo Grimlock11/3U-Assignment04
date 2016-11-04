@@ -17,12 +17,13 @@ public class A4Q4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        // create the input for the user
         Scanner input = new Scanner(System.in);
         // get user to input the amount of money each item costs
         System.out.println("How much does the food for prom cost? : ");
-        // saves number that was inputed
+        // getting a variable for the users input (x6)
         int myInt1;
-        // get the number from the user
+        // gets the number from the user and stores it until needed (x6)
         myInt1 = input.nextInt();
         // get user to input the amount of money each of the items/people/places costs
         System.out.println("How much does the DJ cost? : ");

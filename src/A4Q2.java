@@ -21,9 +21,9 @@ public class A4Q2 {
         Scanner input = new Scanner (System.in);
         // ask for the number the person whishes to convert
         System.out.println("Please enter the measurement in inches you wish to convert: ");
-        // user inputs number and it is saved
+        // getting a variable for the users input
         double myInt;
-        // save users number
+        // gets the users number and saves it
         double myIntDouble;
         // get the number from the user
         myInt = input.nextDouble();

@@ -21,7 +21,7 @@ public class A4Q3 {
         Scanner input = new Scanner(System.in);
         // tell user to put in four numbers on separate lines
         System.out.println("Please enter in 4 numbers on separate lines: ");
-        // get the numbers from the user (x5)
+        // getting a variable for the users input (x5)
         // saves the number the user put in (x5)
         double myInt1;
         myInt1 = input.nextDouble();
