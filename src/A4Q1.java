@@ -14,7 +14,7 @@ public class A4Q1 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // create the input for the user
         Scanner input = new Scanner(System.in);
         // ask for the name of the user
