@@ -37,7 +37,7 @@ public class A4Q8 {
             if (player == 9) {
                 System.out.println("You have landed on a ladder");
                 player = player + 25;
-            }
+            } 
             if (player == 40) {
                 System.out.println("You have landed on a ladder");
                 player = player + 24;
